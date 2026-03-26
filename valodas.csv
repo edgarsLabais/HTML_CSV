@@ -3,6 +3,8 @@ h_title,Projekta SISTĒMA,MY SYSTEM
 n_home,Sākums,Home
 n_db,Datu bāze,Database
 s_aaa,IT Uzturēšanas Rīki un Servisi,Section AAA
+aaa_content,"<h2>Sadaļa AAA</h2><p>Šeit ieraksti savu tekstu AAA sadaļai.</p>","<h2>Section AAA</h2><p>Enter your text for AAA here.</p>"
+bbb_content,"<h2>Sadaļa BBB</h2><p>Šis ir BBB sadaļas saturs.</p>","<h2>Section BBB</h2><p>This is BBB content.</p>"
 s_aaa_1,└ Servisi,└ Sub-section 1
 s_aaa_2,└ Rīki,└ Sub-section 2
 s_bbb,Sadaļa BBB,Section BBB
