@@ -1,12 +1,12 @@
 atslega,lv,en
-h_title,MANA SISTĒMA,MY SYSTEM
+h_title,Projekta SISTĒMA,MY SYSTEM
 n_home,Sākums,Home
 n_db,Datu bāze,Database
-s_aaa,Sadaļa AAA,Section AAA
+s_aaa,IT Uzturēšanas Rīki un Servisi,Section AAA
 s_aaa_1,└ Servisi,└ Sub-section 1
 s_aaa_2,└ Rīki,└ Sub-section 2
 s_bbb,Sadaļa BBB,Section BBB
-f_text,© 2026 - Mans Projekts,© 2026 - My Project
+f_text,© 2026 - Projekts,© 2026 - Project
 search_pl,Meklēt tabulā...,Search in table...
 welcome,"<div class='centrs ramis pa-vidu sturi-ieapali maiga-ena'><h2>Sveicināti!</h2><p>Šis saturs ir centrēts rāmītī ar ēnu.</p></div>","<div class='centrs ramis pa-vidu sturi-ieapali maiga-ena'><h2>Welcome!</h2><p>This content is centered in a box with shadow.</p></div>"
 aaa_1_content,"<div class='pa-kreisi'><h2>Apakšsadaļa 1</h2><p>Parasts plūstošs teksts.</p><img src='img/bilde.jpg' class='elastiga-bilde sturi-ieapali maiga-ena'><p>Bilde augstāk ir responsīva.</p></div>","<div class='pa-kreisi'><h2>Sub-section 1</h2><p>Normal flowing text.</p><img src='img/image.jpg' class='elastiga-bilde sturi-ieapali maiga-ena'><p>The image above is responsive.</p></div>"
