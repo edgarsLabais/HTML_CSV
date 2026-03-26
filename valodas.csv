@@ -1,0 +1,19 @@
+atslega,lv,en
+h_title,MANA SISTĒMA,MY SYSTEM
+n_home,Sākums,Home
+n_db,Datu bāze,Database
+s_aaa,Sadaļa AAA,Section AAA
+s_aaa_1,└ Apakšsadaļa 1,└ Sub-section 1
+s_aaa_2,└ Apakšsadaļa 2,└ Sub-section 2
+s_bbb,Sadaļa BBB,Section BBB
+f_text,© 2026 - Mans Projekts,© 2026 - My Project
+search_pl,Meklēt tabulā...,Search in table...
+welcome,"<h2>Sveicināti!</h2><p>Izvēlieties sadaļu.</p>","<h2>Welcome!</h2><p>Select a section.</p>"
+aaa_content,"<h2>Sadaļa AAA</h2><p>Galvenais saturs.</p>","<h2>Section AAA</h2><p>Main content.</p>"
+aaa_1_content,"<h2>Apakšsadaļa 1</h2><p>Informācija 1.</p>","<h2>Sub-section 1</h2><p>Info 1.</p>"
+aaa_2_content,"<h2>Apakšsadaļa 2</h2><p>Informācija 2.</p>","<h2>Sub-section 2</h2><p>Info 2.</p>"
+bbb_content,"<h2>Sadaļa BBB</h2><p>BBB saturs.</p>","<h2>Section BBB</h2><p>BBB content.</p>"
+kategorija,Kategorija,Category
+nosaukums,Nosaukums,Name
+daudzums,Skaits,Qty
+statuss,Statuss,Status
