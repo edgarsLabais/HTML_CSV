@@ -1,17 +1,18 @@
 atslega,lv,en
-h_title,Projekta SISTĒMA,MY SYSTEM
+h_title,MANA SISTĒMA,MY SYSTEM
 n_home,Sākums,Home
 n_db,Datu bāze,Database
-s_aaa,IT Uzturēšanas Rīki un Servisi,Section AAA
-aaa_content,"<h2>Sadaļa AAA</h2><p>Šeit ieraksti savu tekstu AAA sadaļai.</p>","<h2>Section AAA</h2><p>Enter your text for AAA here.</p>"
-bbb_content,"<h2>Sadaļa BBB</h2><p>Šis ir BBB sadaļas saturs.</p>","<h2>Section BBB</h2><p>This is BBB content.</p>"
-s_aaa_1,└ Servisi,└ Sub-section 1
-s_aaa_2,└ Rīki,└ Sub-section 2
+s_aaa,Sadaļa AAA,Section AAA
+s_aaa_1,└ Apakšsadaļa 1,└ Sub-section 1
+s_aaa_2,└ Apakšsadaļa 2,└ Sub-section 2
 s_bbb,Sadaļa BBB,Section BBB
-f_text,© 2026 - Projekts,© 2026 - Project
+f_text,© 2026 - Mans Projekts,© 2026 - My Project
 search_pl,Meklēt tabulā...,Search in table...
-welcome,"<div class='centrs ramis pa-vidu sturi-ieapali maiga-ena'><h2>Sveicināti!</h2><p>Šis saturs ir centrēts rāmītī ar ēnu.</p></div>","<div class='centrs ramis pa-vidu sturi-ieapali maiga-ena'><h2>Welcome!</h2><p>This content is centered in a box with shadow.</p></div>"
-aaa_1_content,"<div class='pa-kreisi'><h2>Apakšsadaļa 1</h2><p>Parasts plūstošs teksts.</p><img src='img/bilde.jpg' class='elastiga-bilde sturi-ieapali maiga-ena'><p>Bilde augstāk ir responsīva.</p></div>","<div class='pa-kreisi'><h2>Sub-section 1</h2><p>Normal flowing text.</p><img src='img/image.jpg' class='elastiga-bilde sturi-ieapali maiga-ena'><p>The image above is responsive.</p></div>"
+welcome,"<div class='centrs ramis pa-vidu sturi-ieapali maiga-ena'><h2>Sveicināti!</h2><p>Izvēlieties sadaļu kreisajā izvēlnē, lai sāktu darbu.</p></div>","<div class='centrs ramis pa-vidu sturi-ieapali maiga-ena'><h2>Welcome!</h2><p>Please select a section from the sidebar to begin.</p></div>"
+aaa_content,"<div class='pa-kreisi'><h2>Sadaļa AAA</h2><p>Šis ir galvenās AAA sadaļas teksts. Šeit vari rakstīt visu, kas attiecas uz šo tēmu.</p></div>","<div class='pa-kreisi'><h2>Section AAA</h2><p>This is the main AAA section text. You can write everything related to this topic here.</p></div>"
+aaa_1_content,"<div class='ramis sturi-ieapali'><h2 class='centrs'>Apakšsadaļa 1</h2><p>Šeit ir informācija pirmajai apakšsadaļai. Vārdi automātiski pāries jaunā rindā, ja logs būs šaurs.</p><img src='img/test1.jpg' class='elastiga-bilde maiga-ena'></div>","<div class='ramis sturi-ieapali'><h2 class='centrs'>Sub-section 1</h2><p>Here is information for the first sub-section. Words will automatically wrap if the window is narrow.</p><img src='img/test1.jpg' class='elastiga-bilde maiga-ena'></div>"
+aaa_2_content,"<div class='pa-kreisi'><h2>Apakšsadaļa 2</h2><p>Saturs otrajai apakšsadaļai. Vari pievienot sarakstus:</p><ul><li>Punkts viens</li><li>Punkts divi</li></ul></div>","<div class='pa-kreisi'><h2>Sub-section 2</h2><p>Content for the second sub-section. You can add lists:</p><ul><li>Item one</li><li>Item two</li></ul></div>"
+bbb_content,"<div class='pa-kreisi'><h2>Sadaļa BBB</h2><p>BBB sadaļas saturs un apraksts.</p></div>","<div class='pa-kreisi'><h2>Section BBB</h2><p>BBB section content and description.</p></div>"
 kategorija,Kategorija,Category
 nosaukums,Nosaukums,Name
 daudzums,Skaits,Qty
