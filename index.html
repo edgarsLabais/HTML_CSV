@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Gala Produkts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 data-i18n="h_title">MANA SISTĒMA</h1>
+    <div class="valodu-josla">
+        <button class="v-btn" onclick="nomainitValodu('lv')">LV</button>
+        <button class="v-btn" onclick="nomainitValodu('en')">EN</button>
+    </div>
+</header>
+
+<div class="nav-top">
+    <button class="poga" onclick="raditSaturu('welcome')" data-i18n="n_home">Sākums</button>
+    <button class="poga" onclick="raditSaturu('db')" data-i18n="n_db">Datu bāze</button>
+</div>
+
+<aside>
+    <button class="poga" onclick="raditSaturu('aaa')" data-i18n="s_aaa">Sadaļa AAA</button>
+    <button class="poga" onclick="raditSaturu('bbb')" data-i18n="s_bbb">Sadaļa BBB</button>
+</aside>
+
+<main id="main-content">
+    </main>
+
+<footer data-i18n="f_text">
+    © 2026 - Mans Projekts
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

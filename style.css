@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "nav-top nav-top"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 6px solid #a41c2c; /* Karoga krāsa */
+}
+
+.valodu-josla { display: flex; gap: 5px; }
+.v-btn { padding: 5px 10px; cursor: pointer; border: none; border-radius: 3px; background: #ecf0f1; }
+.v-btn.active { background: #3498db; color: white; }
+
+.nav-top {
+    grid-area: nav-top;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #f1f3f5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-right: 1px solid #ddd;
+}
+
+main { grid-area: content; padding: 30px; background: white; }
+
+footer {
+    grid-area: footer;
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 15px;
+}
+
+.poga {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.poga:hover { background-color: #2980b9; }
+
+/* Tabulas un meklētāja stili */
+#mekletajs { width: 100%; max-width: 300px; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background-color: #3498db; color: white; }
+tr:nth-child(even) { background-color: #f9f9f9; }
+.hidden { display: none; }
