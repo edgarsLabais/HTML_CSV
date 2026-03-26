@@ -2,9 +2,9 @@ atslega,lv,en
 h_title,MANA SISTĒMA,MY SYSTEM
 n_home,Sākums,Home
 n_db,Datu bāze,Database
-s_aaa,Sadaļa AAA,Section AAA
-s_aaa_1,└ Apakšsadaļa 1,└ Sub-section 1
-s_aaa_2,└ Apakšsadaļa 2,└ Sub-section 2
+s_aaa,IT uzturēšanas rīki un servisi,Section AAA
+s_aaa_1,└ Rīki 1,└ Sub-section 1
+s_aaa_2,└ Servissi 2,└ Sub-section 2
 s_bbb,Sadaļa BBB,Section BBB
 f_text,© 2026 - Mans Projekts,© 2026 - My Project
 search_pl,Meklēt tabulā...,Search in table...
