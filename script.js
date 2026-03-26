@@ -2,14 +2,12 @@ let tulkojumi = {};
 let aktivaSadala = 'welcome';
 let csvTabulasDati = "";
 
-// 1. IELĀDĒ VALODAS UN INICIALIZĒ LAPU
 async function ieladetValodas() {
     try {
         const res = await fetch('valodas.csv');
         const teksts = await res.text();
         const rindas = teksts.trim().split('\n');
         
-        // Atpazīstam visas valodas no pirmās rindas (atslega, lv, en, de...)
         const galvene = rindas[0].split(',');
         const pieejamasValodas = galvene.slice(1).map(v => v.trim());
         
@@ -18,6 +16,7 @@ async function ieladetValodas() {
 
         rindas.forEach((rinda, i) => {
             if (i === 0) return;
+            // Sadala rindu, ignorējot komatus pēdiņās
             const kols = rinda.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
             const atslega = kols[0].trim();
             
@@ -35,11 +34,10 @@ async function ieladetValodas() {
         tulkojumi = vardenica;
         nomainitValodu(localStorage.getItem('val') || 'lv');
     } catch (e) {
-        console.error("Kļūda ielādējot valodas:", e);
+        console.error("Valodu ielādes kļūda:", e);
     }
 }
 
-// 2. VALODAS MAINĪŠANA
 function nomainitValodu(v) {
     if (!tulkojumi[v]) return;
     localStorage.setItem('val', v);
@@ -51,21 +49,20 @@ function nomainitValodu(v) {
     raditSaturu(aktivaSadala);
 }
 
-// 3. SATURA RĀDĪŠANA
 async function raditSaturu(sadala) {
     aktivaSadala = sadala;
     const main = document.getElementById('main-content');
     const v = localStorage.getItem('val') || 'lv';
 
     if (sadala === 'db') {
-        main.innerHTML = `<input type="text" id="mekletajs" onkeyup="filtreTabulu()" placeholder="${tulkojumi[v].search_pl || '...'}"><div id="tab-v"></div>`;
+        main.innerHTML = `<input type="text" id="mekletajs" onkeyup="filtreTabulu()" placeholder="${tulkojumi[v].search_pl || '...'}"><div class="tabulas-ritinatajs" id="tab-v"></div>`;
         await ieladetTabulu();
     } else {
-        main.innerHTML = tulkojumi[v][sadala + '_content'] || tulkojumi[v][sadala] || "Sadaļa nav atrasta.";
+        const saturs = tulkojumi[v][sadala + '_content'] || tulkojumi[v][sadala] || "Sadaļa nav atrasta.";
+        main.innerHTML = `<div class="plustoss-saturs">${saturs}</div>`;
     }
 }
 
-// 4. TABULAS APSTRĀDE
 async function ieladetTabulu() {
     try {
         const res = await fetch('dati.csv');

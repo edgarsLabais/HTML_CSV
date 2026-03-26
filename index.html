@@ -7,37 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <h1 data-i18n="h_title">Ielādē...</h1>
-    <div class="valodu-josla">
-        <button class="v-btn" onclick="nomainitValodu('lv')">LV</button>
-        <button class="v-btn" onclick="nomainitValodu('en')">EN</button>
+    <header>
+        <h1 data-i18n="h_title"></h1>
+        <div class="valodu-josla">
+            <button class="v-btn" onclick="nomainitValodu('lv')">LV</button>
+            <button class="v-btn" onclick="nomainitValodu('en')">EN</button>
         </div>
-</header>
-
-<div class="nav-top">
-    <button class="poga" onclick="raditSaturu('welcome')" data-i18n="n_home"></button>
-    <button class="poga" onclick="raditSaturu('db')" data-i18n="n_db"></button>
-</div>
-
-<aside>
-    <button class="poga" onclick="raditSaturu('aaa')" data-i18n="s_aaa"></button>
-    <div class="apakspogu-grupa">
-        <button class="poga apakspoga" onclick="raditSaturu('aaa_1')" data-i18n="s_aaa_1"></button>
-        <button class="poga apakspoga" onclick="raditSaturu('aaa_2')" data-i18n="s_aaa_2"></button>
+    </header>
+    <div class="nav-top">
+        <button class="poga sturi-ieapali" onclick="raditSaturu('welcome')" data-i18n="n_home"></button>
+        <button class="poga sturi-ieapali" onclick="raditSaturu('db')" data-i18n="n_db"></button>
     </div>
-    <button class="poga" onclick="raditSaturu('bbb')" data-i18n="s_bbb"></button>
-</aside>
-
-<main id="main-content">
-    <p>Sistēma gatavojas darbam...</p>
-</main>
-
-<footer>
-    <span data-i18n="f_text"></span>
-</footer>
-
-<script src="script.js"></script>
+    <aside>
+        <button class="poga" onclick="raditSaturu('aaa')" data-i18n="s_aaa"></button>
+        <div class="apakspogu-grupa">
+            <button class="poga apakspoga sturi-ieapali" onclick="raditSaturu('aaa_1')" data-i18n="s_aaa_1"></button>
+            <button class="poga apakspoga sturi-ieapali" onclick="raditSaturu('aaa_2')" data-i18n="s_aaa_2"></button>
+        </div>
+        <button class="poga" onclick="raditSaturu('bbb')" data-i18n="s_bbb"></button>
+    </aside>
+    <main id="main-content"></main>
+    <footer><span data-i18n="f_text"></span></footer>
+    <script src="script.js"></script>
 </body>
 </html>

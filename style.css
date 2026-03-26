@@ -1,5 +1,6 @@
+/* --- PAMATA IZKĀRTOJUMS --- */
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     display: grid;
     grid-template-areas: "header header" "nav-top nav-top" "sidebar content" "footer footer";
@@ -9,22 +10,64 @@ body {
 }
 
 header { grid-area: header; background: #2c3e50; color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 5px solid #a41c2c; }
-.v-btn { padding: 5px 10px; cursor: pointer; margin-left: 5px; border: none; border-radius: 3px; }
+.v-btn { padding: 5px 12px; cursor: pointer; margin-left: 5px; border: none; border-radius: 4px; transition: 0.3s; }
 .v-btn.active { background: #3498db; color: white; }
 
 .nav-top { grid-area: nav-top; background: #f8f9fa; padding: 10px; display: flex; gap: 10px; border-bottom: 1px solid #ddd; }
 aside { grid-area: sidebar; background: #f1f3f5; padding: 20px; display: flex; flex-direction: column; gap: 8px; border-right: 1px solid #ddd; }
 main { grid-area: content; padding: 30px; background: white; }
-footer { grid-area: footer; background: #2c3e50; color: #bdc3c7; text-align: center; padding: 10px; }
+footer { grid-area: footer; background: #2c3e50; color: #bdc3c7; text-align: center; padding: 15px; }
 
-.poga { padding: 10px; background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; text-align: left; }
+/* --- POGU PAMATA STILI --- */
+.poga { padding: 10px 15px; background: #3498db; color: white; border: none; cursor: pointer; text-align: left; transition: 0.3s; display: block; width: 100%; }
 .poga:hover { background: #2980b9; }
-
 .apakspogu-grupa { display: flex; flex-direction: column; gap: 4px; margin-bottom: 10px; }
-.apakspoga { margin-left: 20px; background: #dcdde1; color: #2f3640; font-size: 0.9em; }
+.apakspoga { margin-left: 20px; background: #dcdde1; color: #2f3640; font-size: 0.9em; width: calc(100% - 20px); }
 
-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+/* --- POZICIONĒŠANAS UN PLŪSMAS KLASES (Lietošanai CSV) --- */
+.centrs { text-align: center; }
+.pa-labi { text-align: right; }
+.pa-kreisi { text-align: left; }
+
+.plustoss-saturs { width: 100%; line-height: 1.6; word-wrap: break-word; }
+
+/* RĀMĪŠA KONTEINERS */
+.ramis {
+    border: 2px solid #bdc3c7;
+    padding: 20px;
+    margin: 15px 0;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.pie-augšas { justify-content: flex-start; }
+.pa-vidu { justify-content: center; }
+.pie-apakšas { justify-content: flex-end; }
+
+/* STŪRU STILI */
+.sturi-kantaini { border-radius: 0px !important; }
+.sturi-ieapali { border-radius: 12px !important; }
+.sturi-apali { border-radius: 50px !important; }
+
+/* VIZUĀLIE EFEKTI */
+.maiga-ena { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.izgaismots:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.2); transform: translateY(-2px); transition: 0.3s; }
+
+/* RESPONSĪVIE OBJEKTI */
+.elastiga-bilde { max-width: 100%; height: auto; display: block; margin: 10px auto; }
+
+.tabulas-ritinatajs { width: 100%; overflow-x: auto; margin: 15px 0; border: 1px solid #eee; }
+
+/* TABULAS STILS */
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
 th { background: #3498db; color: white; }
-tr:nth-child(even) { background: #f9f9f9; }
-#mekletajs { width: 100%; max-width: 300px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+tr:nth-child(even) { background: #f2f2f2; }
+
+#mekletajs { width: 100%; max-width: 350px; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+
+/* MOBILĀS VERSIJAS PIELĀGOJUMS */
+@media (max-width: 768px) {
+    body { grid-template-areas: "header" "nav-top" "sidebar" "content" "footer"; grid-template-columns: 1fr; }
+    aside { border-right: none; border-bottom: 1px solid #ddd; }
+}
